@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mansi Baranwal - Aspiring Data Analyst specializing in Python, SQL, Power BI, Advanced Excel, and Business Intelligence." />
+  <meta name="keywords" content="Data Analyst, Mansi Baranwal, Portfolio, SQL, Python, Power BI, Tableau, Excel, Data Visualization, Fresher Data Analyst" />
+  <meta name="author" content="Mansi Baranwal" />
+  <title>Mansi Baranwal | Aspiring Data Analyst & BI Specialist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Chart.js for Live Interactive Analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Ambient Glows -->
+  <div class="glow-sphere sphere-1" aria-hidden="true"></div>
+  <div class="glow-sphere sphere-2" aria-hidden="true"></div>
+  <div class="glow-sphere sphere-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <nav class="navbar container">
+      <a href="#hero" class="brand-logo" aria-label="Mansi Baranwal Portfolio">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Mansi</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-role">baranwal</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#sandbox" class="nav-link">Live Metrics</a></li>
+        <li class="nav-item"><a href="#tools" class="nav-link">Tools & Tech</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons (Theme Toggle + Resume Modal) -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Color Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+        <button class="btn btn-primary-sm" id="openResumeBtn">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Resume</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Actively Seeking Entry-Level Data Analyst Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Mansi Baranwal</span><br />
+            Transforming Complex Data into <span class="highlight-text">Strategic Decisions</span>
+          </h1>
+
+          <p class="hero-description">
+            Passionate Fresher Data Analyst with a rigorous foundation in 
+            <strong>Python, SQL, Power BI, Advanced Excel</strong>, and 
+            <strong>Exploratory Data Analysis</strong>. Dedicated to building interactive dashboards, 
+            detecting business anomalies, and presenting actionable stories from raw data.
+          </p>
+
+          <!-- Metrics Ribbon -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number" data-count="12">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">Projects Built</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-count="65">0</span><span class="metric-plus">K+</span>
+              <span class="metric-label">Data Rows Analyzed</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-count="5">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">BI Dashboards</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-count="100">0</span><span class="metric-plus">%</span>
+              <span class="metric-label">Commitment</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Talk</span>
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <button class="btn btn-outline" id="heroResumeBtn">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://linkedin.com/in/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Repositories">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:mansi.baranwal.analytics@gmail.com" class="social-link" title="Email Mansi Baranwal">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="tel:+919876543210" class="social-link" title="Phone Contact">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card">
+              <div class="avatar-img-wrapper">
+                <img src="assets/mansi_avatar.jpg" alt="Mansi Baranwal - Data Analyst" class="avatar-img" />
+                <div class="avatar-overlay"></div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon sql-badge">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="badge-info">
+                  <span class="badge-title">SQL Specialist</span>
+                  <span class="badge-sub">CTEs, Joins, Windowing</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon bi-badge">
+                  <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div class="badge-info">
+                  <span class="badge-title">Power BI & DAX</span>
+                  <span class="badge-sub">Dynamic Dashboards</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-mid-left">
+                <div class="badge-icon python-badge">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="badge-info">
+                  <span class="badge-title">Python / EDA</span>
+                  <span class="badge-sub">Pandas, NumPy, Seaborn</span>
+                </div>
+              </div>
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Analytics Sandbox (Chart.js Live Showcase) -->
+    <section class="sandbox-section" id="sandbox">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Interactive Data Sandbox</span>
+          </div>
+          <h2 class="section-title">Live Analytics In Action</h2>
+          <p class="section-subtitle">
+            Demonstrating hands-on data manipulation and visual storytelling directly in the browser. 
+            Select a business KPI view below to interact with real-time computed data:
+          </p>
+        </div>
+
+        <div class="sandbox-card glass-panel">
+          <div class="sandbox-toolbar">
+            <div class="sandbox-tabs" role="tablist">
+              <button class="sandbox-tab active" data-dataset="revenue">
+                <i class="fa-solid fa-coins"></i>
+                <span>Revenue & Growth</span>
+              </button>
+              <button class="sandbox-tab" data-dataset="churn">
+                <i class="fa-solid fa-user-minus"></i>
+                <span>Customer Churn Risk</span>
+              </button>
+              <button class="sandbox-tab" data-dataset="channels">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Acquisition Channels</span>
+              </button>
+            </div>
+
+            <div class="sandbox-stats">
+              <div class="stat-pill">
+                <span class="stat-name">Data Points:</span>
+                <span class="stat-value" id="sandboxDataPoints">12 Months</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-name">Primary Metric:</span>
+                <span class="stat-value highlight" id="sandboxPrimaryMetric">$842,500 (+18.4%)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="interactiveChart"></canvas>
+          </div>
+
+          <div class="sandbox-footer">
+            <div class="insight-pill">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span id="sandboxInsight">
+                Key Finding: Q3 customer retention campaign boosted recurring subscription revenue by 24.3% while reducing churn risk by 7.1%.
+              </span>
+            </div>
+            <div class="code-snippet-preview">
+              <code><span class="c-kw">SELECT</span> month, <span class="c-fn">SUM</span>(revenue) <span class="c-kw">FROM</span> metrics <span class="c-kw">GROUP BY</span> 1;</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-regular fa-user"></i>
+            <span>Professional Profile</span>
+          </div>
+          <h2 class="section-title">The Analyst Behind The Numbers</h2>
+          <p class="section-subtitle">
+            Curious, analytical, and business-focused. Transforming raw tabular data into intuitive executive clarity.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio glass-panel">
+            <h3 class="about-greeting">Hello! I am Mansi Baranwal, an entry-level Data Analyst.</h3>
+            <p>
+              I bridge the gap between technical data manipulation and business outcomes. While organizations collect vast amounts of data daily, the true challenge lies in extracting patterns that drive profitable, efficient actions.
+            </p>
+            <p>
+              As a fresher entering the industry, I bring fresh perspective, relentless attention to data integrity, and hands-on mastery of <strong>SQL querying, Python data analysis, Power BI storytelling, and advanced Excel modeling</strong>. 
+            </p>
+            <p>
+              Whether it is identifying why customers cancel subscriptions, designing automated operational dashboards, or cleaning messy survey responses, I thrive on delivering evidence-based answers.
+            </p>
+
+            <div class="about-highlights-list">
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Data Integrity First:</strong> Thorough outlier treatment, missing value imputation, and schema normalization.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Decision-Ready Visuals:</strong> Clean color palettes, intuitive visual hierarchies, and actionable KPIs over vanity charts.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Business Focus:</strong> Translating statistical findings into ROI, cost-reduction, and customer retention strategies.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-grid">
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-filter-circle-dollar"></i>
+              </div>
+              <h4>Data Wrangling & ETL</h4>
+              <p>Cleaning messy datasets, merging relational schemas, parsing timestamps, and standardizing categorical variables.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h4>Interactive Dashboards</h4>
+              <p>Developing dynamic Power BI and Tableau reports with drill-through filters, parameters, and custom DAX measures.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <h4>Exploratory Data Analysis</h4>
+              <p>Hypothesis validation, bivariate analysis, correlation matrices, and distribution checks using Pandas & Seaborn.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <h4>Data Storytelling</h4>
+              <p>Synthesizing technical findings into crisp executive summaries and stakeholder presentations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Technologies Section -->
+    <section class="tools-section" id="tools">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-toolbox"></i>
+            <span>Data Analytics Toolkit</span>
+          </div>
+          <h2 class="section-title">Tools & Technologies I Work With</h2>
+          <p class="section-subtitle">
+            Industry standard tools practiced extensively through academic projects, simulations, and real-world datasets.
+          </p>
+        </div>
+
+        <div class="tools-categories-grid">
+          <!-- Category 1: Languages & Querying -->
+          <div class="tool-group-card glass-panel">
+            <div class="tool-group-header">
+              <div class="group-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Querying & Programming</h3>
+                <span class="group-desc">Core data extraction & logic</span>
+              </div>
+            </div>
+            <div class="tool-chips-grid">
+              <div class="tool-chip" data-proficiency="Advanced (Fresher)">
+                <i class="fa-solid fa-database icon-sql"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">SQL (PostgreSQL / MySQL)</span>
+                  <span class="tool-detail">Joins, CTEs, Window Funcs, Subqueries</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-brands fa-python icon-python"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Python</span>
+                  <span class="tool-detail">Pandas, NumPy, Matplotlib, Seaborn</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-terminal icon-bash"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Jupyter Notebooks</span>
+                  <span class="tool-detail">Reproducible research & EDA pipelines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: BI & Visualization -->
+          <div class="tool-group-card glass-panel">
+            <div class="tool-group-header">
+              <div class="group-icon"><i class="fa-solid fa-chart-column"></i></div>
+              <div>
+                <h3>BI & Data Visualization</h3>
+                <span class="group-desc">Visual dashboards & storytelling</span>
+              </div>
+            </div>
+            <div class="tool-chips-grid">
+              <div class="tool-chip">
+                <i class="fa-solid fa-chart-pie icon-bi"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Microsoft Power BI</span>
+                  <span class="tool-detail">DAX measures, Star Schema, KPI cards</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-chart-area icon-tableau"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Tableau</span>
+                  <span class="tool-detail">Interactive Storyboards, Dual Axes, Filters</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-file-excel icon-excel"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Advanced MS Excel</span>
+                  <span class="tool-detail">XLOOKUP, Pivot Tables, Power Query, Macros</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Analytics Cloud -->
+          <div class="tool-group-card glass-panel">
+            <div class="tool-group-header">
+              <div class="group-icon"><i class="fa-solid fa-server"></i></div>
+              <div>
+                <h3>Databases & Workflow</h3>
+                <span class="group-desc">Data ingestion, versions & storage</span>
+              </div>
+            </div>
+            <div class="tool-chips-grid">
+              <div class="tool-chip">
+                <i class="fa-solid fa-table-cells-large icon-db"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Relational Databases</span>
+                  <span class="tool-detail">ER Modeling, Primary/Foreign keys, DDL/DML</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-brands fa-git-alt icon-git"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Git & GitHub</span>
+                  <span class="tool-detail">Version control, repository management</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-cloud icon-cloud"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Google BigQuery / Sheets</span>
+                  <span class="tool-detail">Cloud querying, collaborative reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Methodologies -->
+          <div class="tool-group-card glass-panel">
+            <div class="tool-group-header">
+              <div class="group-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3>Analytical Competencies</h3>
+                <span class="group-desc">Statistical & analytical rigor</span>
+              </div>
+            </div>
+            <div class="tool-chips-grid">
+              <div class="tool-chip">
+                <i class="fa-solid fa-calculator icon-stat"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Descriptive & Inferential Stats</span>
+                  <span class="tool-detail">Mean, Median, Standard Deviation, p-values</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-diagram-project icon-eda"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">Cohort & RFM Segmentation</span>
+                  <span class="tool-detail">Recency, Frequency, Monetary scoring</span>
+                </div>
+              </div>
+              <div class="tool-chip">
+                <i class="fa-solid fa-bullseye icon-kpi"></i>
+                <div class="tool-chip-info">
+                  <span class="tool-name">KPI Framework Design</span>
+                  <span class="tool-detail">Conversion rates, CAC, LTV, Retention</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section (Technical & Professional) -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Capabilities Breakdown</span>
+          </div>
+          <h2 class="section-title">Core Skills & Competencies</h2>
+          <p class="section-subtitle">
+            Balanced proficiency in both technical data processing and cross-functional business communication.
+          </p>
+        </div>
+
+        <div class="skills-dual-grid">
+          <!-- Technical Skills with Visual Level Indicators -->
+          <div class="skills-card glass-panel">
+            <div class="skills-card-title">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Technical Competencies</h3>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">Data Cleaning & Wrangling (Python / Excel)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">SQL Query Optimization (Joins, Windowing, CTEs)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">Power BI & DAX Modeling</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">Advanced Excel & Power Query</span>
+                <span class="skill-percent">94%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 94%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="skill-meter-header">
+                <span class="skill-name">Statistical Testing & Metrics Evaluation</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft & Business Skills -->
+          <div class="skills-card glass-panel">
+            <div class="skills-card-title">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>Analytical & Business Mindset</h3>
+            </div>
+
+            <div class="soft-skills-grid">
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <h4>Problem Decomposition</h4>
+                <p>Breaking down ambiguous business questions into testable analytical hypotheses.</p>
+              </div>
+
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-chart-gantt"></i></div>
+                <h4>Executive Storytelling</h4>
+                <p>Presenting findings clearly without getting lost in technical jargon.</p>
+              </div>
+
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h4>Attention to Detail</h4>
+                <p>Meticulous validation of figures, eliminating duplicates and calculation errors.</p>
+              </div>
+
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <h4>Collaborative Mindset</h4>
+                <p>Working cross-functionally with product, marketing, and finance teams.</p>
+              </div>
+
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                <h4>Continuous Learning</h4>
+                <p>Rapidly adopting new libraries, cloud data warehouses, and AI analytics tools.</p>
+              </div>
+
+              <div class="soft-skill-box">
+                <div class="soft-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <h4>Agile & Adaptable</h4>
+                <p>Delivering iterative prototypes and quick turnarounds on time-sensitive ad-hoc queries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section with Interactive Filtering -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Portfolio Showcase</span>
+          </div>
+          <h2 class="section-title">Featured Analytics Projects</h2>
+          <p class="section-subtitle">
+            End-to-end data analytics solutions solving real business problems with measurable impact.
+          </p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="filter-btn" data-filter="powerbi">Power BI & Dashboards</button>
+          <button class="filter-btn" data-filter="python">Python & EDA</button>
+          <button class="filter-btn" data-filter="sql">SQL & Relational DBs</button>
+          <button class="filter-btn" data-filter="excel">Advanced Excel</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: Power BI & SQL -->
+          <article class="project-card glass-panel" data-category="powerbi sql">
+            <div class="project-card-badge">Power BI + SQL</div>
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <span class="project-client">E-Commerce & Retail</span>
+                <h3 class="project-title">Omnichannel Sales & Customer RFM Intelligence</h3>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Analyzed 125,000+ customer transactions to identify high-value customer clusters and revenue bottlenecks. Built a multi-page Power BI dashboard with dynamic DAX measures.
+            </p>
+
+            <div class="project-kpis">
+              <div class="kpi-mini">
+                <span class="kpi-val">$1.4M+</span>
+                <span class="kpi-label">Sales Tracked</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">15.2%</span>
+                <span class="kpi-label">Margin Uplift</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">3 Tiers</span>
+                <span class="kpi-label">RFM Segments</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">RFM Modeling</span>
+              <span class="tag">Star Schema</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-card-link view-project-btn" data-project="ecommerce">
+                <i class="fa-regular fa-eye"></i> View Case Study
+              </button>
+              <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="btn-card-ghost" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Python & EDA -->
+          <article class="project-card glass-panel" data-category="python">
+            <div class="project-card-badge">Python + EDA</div>
+            <div class="project-header">
+              <div class="project-icon-box python-color">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div>
+                <span class="project-client">Telecom Industry</span>
+                <h3 class="project-title">Customer Churn Diagnostics & Driver Analysis</h3>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Investigated customer attrition across 7,000+ telecom accounts using Pandas and Seaborn. Identified contract type and technical support responsiveness as top predictors of churn.
+            </p>
+
+            <div class="project-kpis">
+              <div class="kpi-mini">
+                <span class="kpi-val">26.5%</span>
+                <span class="kpi-label">Base Churn Rate</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">42%</span>
+                <span class="kpi-label">Month-to-Month Risk</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">21</span>
+                <span class="kpi-label">Features Explored</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Correlation Heatmaps</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-card-link view-project-btn" data-project="churn">
+                <i class="fa-regular fa-eye"></i> View Case Study
+              </button>
+              <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="btn-card-ghost" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: SQL & Healthcare Operations -->
+          <article class="project-card glass-panel" data-category="sql powerbi">
+            <div class="project-card-badge">SQL + Analytics</div>
+            <div class="project-header">
+              <div class="project-icon-box sql-color">
+                <i class="fa-solid fa-hospital-user"></i>
+              </div>
+              <div>
+                <span class="project-client">Healthcare & Operations</span>
+                <h3 class="project-title">Hospital Emergency Wait-Time & Resource Analytics</h3>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Authored complex SQL queries leveraging Common Table Expressions (CTEs) and Window Functions across 5 relational tables to detect emergency triage delays and staff bottlenecks.
+            </p>
+
+            <div class="project-kpis">
+              <div class="kpi-mini">
+                <span class="kpi-val">45,000+</span>
+                <span class="kpi-label">Records Queried</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">-22 min</span>
+                <span class="kpi-label">Wait Time Saved</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">99.4%</span>
+                <span class="kpi-label">Data Accuracy</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">MySQL / PostgreSQL</span>
+              <span class="tag">Window Functions</span>
+              <span class="tag">CTEs</span>
+              <span class="tag">ER Diagram</span>
+              <span class="tag">Tableau</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-card-link view-project-btn" data-project="healthcare">
+                <i class="fa-regular fa-eye"></i> View Case Study
+              </button>
+              <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="btn-card-ghost" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Advanced Excel -->
+          <article class="project-card glass-panel" data-category="excel">
+            <div class="project-card-badge">Advanced Excel</div>
+            <div class="project-header">
+              <div class="project-icon-box excel-color">
+                <i class="fa-solid fa-file-excel"></i>
+              </div>
+              <div>
+                <span class="project-client">Supply Chain & Logistics</span>
+                <h3 class="project-title">Automated Global Inventory & Fulfillment Tracker</h3>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Built an automated end-of-month financial and stock reconciliation model in Excel using Power Query, dynamic arrays, nested XLOOKUPs, and interactive pivot slicers.
+            </p>
+
+            <div class="project-kpis">
+              <div class="kpi-mini">
+                <span class="kpi-val">6 hrs/wk</span>
+                <span class="kpi-label">Manual Time Saved</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">100%</span>
+                <span class="kpi-label">Automated Ingestion</span>
+              </div>
+              <div class="kpi-mini">
+                <span class="kpi-val">14 Warehouses</span>
+                <span class="kpi-label">Tracked</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">MS Excel</span>
+              <span class="tag">Power Query</span>
+              <span class="tag">Dynamic Arrays</span>
+              <span class="tag">Pivot Slicers</span>
+              <span class="tag">Conditional Formats</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-card-link view-project-btn" data-project="excel">
+                <i class="fa-regular fa-eye"></i> View Case Study
+              </button>
+              <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="btn-card-ghost" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience, Internships & Education Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Career Journey</span>
+          </div>
+          <h2 class="section-title">Experience & Academic Background</h2>
+          <p class="section-subtitle">
+            Demonstrated practical application through virtual internships, intensive project simulations, and academic rigor.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: Virtual Internship -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">Data Analytics Simulation Intern</span>
+                  <h3 class="timeline-org">Accenture & Forage Job Simulation</h3>
+                </div>
+                <span class="timeline-date">Virtual Simulation | 2024</span>
+              </div>
+              <p class="timeline-summary">
+                Completed a comprehensive data consultancy simulation advising a high-growth social media client on content strategy and revenue optimization.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Cleaned and merged 7 disparate datasets totaling 25,000+ engagement rows using Python & Excel, eliminating empty values and outliers.</li>
+                <li>Identified top 5 performing content categories driving 68% of total user reactions.</li>
+                <li>Prepared and presented a client-ready executive slide deck and Power BI dashboard detailing strategic recommendations for marketing budget reallocation.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge-tag">Data Cleaning</span>
+                <span class="badge-tag">Business Presentation</span>
+                <span class="badge-tag">Power BI</span>
+                <span class="badge-tag">Stakeholder Engagement</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Academic Capstone -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">Lead Data Analyst (Academic Capstone)</span>
+                  <h3 class="timeline-org">University Data Analytics & Research Lab</h3>
+                </div>
+                <span class="timeline-date">Academic Project | 2023 - 2024</span>
+              </div>
+              <p class="timeline-summary">
+                Spearheaded end-to-end data pipeline design for academic operational efficiency, managing database architecture, statistical profiling, and reporting.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Designed normalized relational database schema in MySQL with primary/foreign keys to track resource allocation.</li>
+                <li>Wrote automated SQL stored procedures and scripts to generate weekly attendance and grade deviation reports.</li>
+                <li>Synthesized predictive indicators that flagged students needing academic counseling with 84% recall.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge-tag">MySQL</span>
+                <span class="badge-tag">Database Architecture</span>
+                <span class="badge-tag">Python EDA</span>
+                <span class="badge-tag">Team Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Degree -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">Bachelor of Science / Technology</span>
+                  <h3 class="timeline-org">Computer Science / Information Technology / Statistics</h3>
+                </div>
+                <span class="timeline-date">Graduating Class of 2024</span>
+              </div>
+              <p class="timeline-summary">
+                Rigorous coursework combining computer science principles, mathematical foundations, and data science methodologies.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>Relevant Coursework:</strong> Database Management Systems (DBMS), Probability & Statistics, Object-Oriented Programming, Data Structures & Algorithms, Business Intelligence.</li>
+                <li>Active Member of University Data & Analytics Society; organized campus SQL workshops for fellow students.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge-tag">First Class with Distinction</span>
+                <span class="badge-tag">DBMS</span>
+                <span class="badge-tag">Applied Statistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-award"></i>
+            <span>Verified Credentials</span>
+          </div>
+          <h2 class="section-title">Professional Certifications</h2>
+          <p class="section-subtitle">
+            Industry-recognized credentials validating core competencies in analytics, query optimization, and dashboard design.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap google-color">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google & Coursera</span>
+              <h3 class="cert-title">Google Data Analytics Professional Certificate</h3>
+              <p class="cert-desc">
+                8-course intensive program covering data cleaning, analysis with R & SQL, visualization in Tableau, and end-to-end case study completion.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status"><i class="fa-solid fa-check"></i> Verified Credential</span>
+                <span class="cert-badge-chip">Credential ID: GOOG-DA-2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap hacker-color">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">HackerRank</span>
+              <h3 class="cert-title">SQL (Advanced) Skill Certificate</h3>
+              <p class="cert-desc">
+                Validated mastery in complex query formulation, recursive CTEs, window analytical functions, pivots, and index optimization.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status"><i class="fa-solid fa-check"></i> Gold Level 5-Star</span>
+                <span class="cert-badge-chip">Verified Assessment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-wrap ms-color">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Microsoft Learn</span>
+              <h3 class="cert-title">Power BI Data Analyst Associate (PL-300 Path)</h3>
+              <p class="cert-desc">
+                Comprehensive training in preparing data, modeling data schemas, visualizing data, and deploying enterprise Power BI reports.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status"><i class="fa-solid fa-check"></i> Coursework Completed</span>
+                <span class="cert-badge-chip">PL-300 Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Ready to Bring Insights to Your Team</h2>
+          <p class="section-subtitle">
+            I am actively interviewing for full-time entry-level Data Analyst, Junior BI Analyst, and Reporting Specialist positions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Contact Info -->
+          <div class="contact-info-panel glass-panel">
+            <h3 class="contact-panel-title">Let's Connect & Discuss Opportunities</h3>
+            <p class="contact-panel-desc">
+              Whether you have an open position, an internship opportunity, or want to review my code and dashboard samples, my inbox is always open!
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">Email Me</span>
+                  <a href="mailto:mansi.baranwal.analytics@gmail.com" class="detail-link">mansi.baranwal.analytics@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copyEmailBtn" title="Copy Email Address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="detail-link">linkedin.com/in/mansi-baranwal</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">GitHub</span>
+                  <a href="https://github.com/mansi-baranwal" target="_blank" rel="noopener noreferrer" class="detail-link">github.com/mansi-baranwal</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">Location & Availability</span>
+                  <span class="detail-value">Open to Remote / Hybrid / Relocation across India & Global</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Callout Card -->
+            <div class="availability-card">
+              <div class="avail-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <strong>Notice Period: Immediate Joiner</strong>
+                <p>Available to commence full-time or contract roles immediately.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 class="contact-panel-title">Send a Direct Message</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Your Name <span class="req">*</span></label>
+                  <input type="text" id="contactName" name="name" placeholder="e.g. Sarah Jenkins" required />
+                  <span class="error-msg" id="nameError">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Your Email <span class="req">*</span></label>
+                  <input type="email" id="contactEmail" name="email" placeholder="e.g. sarah@company.com" required />
+                  <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject / Role Opportunity <span class="req">*</span></label>
+                <input type="text" id="contactSubject" name="subject" placeholder="e.g. Junior Data Analyst Position" required />
+                <span class="error-msg" id="subjectError">Please provide a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="req">*</span></label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Hi Mansi, we reviewed your portfolio and would like to invite you for an interview..." required></textarea>
+                <span class="error-msg" id="messageError">Please type your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-name">Mansi</span><span class="logo-dot">.</span><span class="logo-role">baranwal</span>
+        </a>
+        <p class="footer-tagline">Building data-driven clarity through SQL, Python, and Power BI.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="yearSpan">2026</span> Mansi Baranwal. All rights reserved. Designed for entry-level data excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-backdrop" id="projectModalBackdrop" aria-hidden="true">
+    <div class="modal-box glass-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close Project Details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body" id="modalContent">
+        <!-- Injected via JavaScript dynamically based on clicked project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Quick View / Download Modal -->
+  <div class="modal-backdrop" id="resumeModalBackdrop" aria-hidden="true">
+    <div class="modal-box resume-modal-box glass-panel" role="dialog" aria-modal="true">
+      <div class="resume-modal-header">
+        <div>
+          <h3 class="modal-resume-title">Mansi Baranwal's Professional Resume</h3>
+          <span class="modal-resume-sub">Data Analyst (Fresher) • Ready for Hire</span>
+        </div>
+        <div class="resume-modal-actions">
+          <button class="btn btn-primary-sm" id="printResumeBtn">
+            <i class="fa-solid fa-print"></i> Print / Save PDF
+          </button>
+          <button class="modal-close" id="closeResumeModalBtn" aria-label="Close Resume Preview">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-sheet" id="printableResume">
+        <div class="resume-header">
+          <h2>MANSI BARANWAL</h2>
+          <p class="resume-target">ASPIRING DATA ANALYST & BUSINESS INTELLIGENCE SPECIALIST</p>
+          <div class="resume-contact-bar">
+            <span><i class="fa-solid fa-envelope"></i> mansi.baranwal.analytics@gmail.com</span>
+            <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/mansi-baranwal</span>
+            <span><i class="fa-brands fa-github"></i> github.com/mansi-baranwal</span>
+            <span><i class="fa-solid fa-location-dot"></i> India (Open to Remote / Relocation)</span>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title">PROFESSIONAL SUMMARY</h4>
+          <p>
+            Analytical and detail-oriented graduate with strong skills in Python, SQL, Power BI, and Advanced Excel. Proven experience in exploratory data analysis, dashboard design, and ETL automation through virtual internships and real-world capstone projects. Google Certified Data Analyst seeking an entry-level position to deliver measurable business impact.
+          </p>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title">TECHNICAL SKILLS</h4>
+          <p><strong>Languages & DBs:</strong> SQL (PostgreSQL, MySQL), Python (Pandas, NumPy, Matplotlib, Seaborn), SQLite</p>
+          <p><strong>BI & Tools:</strong> Microsoft Power BI, DAX, Tableau, Advanced Excel (Power Query, Pivot Tables, XLOOKUP), Git, Jupyter</p>
+          <p><strong>Competencies:</strong> Data Cleaning, Exploratory Data Analysis (EDA), KPI Tracking, Cohort Analysis, Statistical Modeling</p>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title">REPRESENTATIVE PROJECTS</h4>
+          <div class="resume-project">
+            <strong>Omnichannel E-Commerce Revenue & RFM Dashboard (Power BI, SQL)</strong>
+            <p>• Cleaned and modeled 125K+ transactions with star schema; created 18 custom DAX measures for executive sales monitoring.</p>
+            <p>• Segmented customer base into Champions, At-Risk, and Churned cohorts, enabling targeted marketing campaigns.</p>
+          </div>
+          <div class="resume-project">
+            <strong>Telecom Customer Churn Exploratory Analysis (Python, Pandas, Seaborn)</strong>
+            <p>• Analyzed customer churn patterns across 7,000+ accounts; identified key risk factors reducing subscriber loss.</p>
+            <p>• Engineered features, handled missing values, and created correlation heatmaps to guide product retention policies.</p>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h4 class="resume-sec-title">EDUCATION & CERTIFICATIONS</h4>
+          <p>• <strong>Bachelor of Science / Technology</strong> (Class of 2024) - First Class with Distinction</p>
+          <p>• <strong>Google Data Analytics Professional Certificate</strong> - Coursera (2024)</p>
+          <p>• <strong>HackerRank SQL (Advanced)</strong> - 5-Star Certified Gold Badge</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

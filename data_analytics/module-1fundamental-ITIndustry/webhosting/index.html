@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Nexus is a modern data analytics workspace for turning complex data into clear decisions." />
+	<title>Nexus Analytics | See the signal</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<style type="text/tailwindcss">
+		@theme {
+			--font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+			--font-body: "DM Sans", ui-sans-serif, sans-serif;
+			--color-ink: #10151b;
+			--color-paper: #f5f7f3;
+			--color-lime: #c6ef5a;
+			--color-aqua: #7dd9d3;
+		}
+		:root { --font-display: "Space Grotesk", ui-sans-serif, sans-serif; --font-body: "DM Sans", ui-sans-serif, sans-serif; --color-ink: #10151b; --color-paper: #f5f7f3; --color-lime: #c6ef5a; --color-aqua: #7dd9d3; }
+		@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+		.rise { animation: rise .7s ease-out both; }
+		.delay-1 { animation-delay: .12s; }
+		.delay-2 { animation-delay: .24s; }
+		.delay-3 { animation-delay: .36s; }
+		.grid-lines { background-image: linear-gradient(rgba(198,239,90,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(198,239,90,.07) 1px, transparent 1px); background-size: 42px 42px; }
+	</style>
+</head>
+<body class="bg-ink font-body text-paper antialiased">
+	<header class="relative z-10 border-b border-white/10">
+		<nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8" aria-label="Main navigation">
+			<a href="#top" class="flex items-center gap-3 font-display text-lg font-semibold tracking-tight">
+				<span class="grid h-8 w-8 place-items-center rounded-sm bg-lime text-ink"><i data-lucide="activity" class="h-4 w-4"></i></span>
+				nexus<span class="text-lime">.</span>
+			</a>
+			<div class="hidden items-center gap-8 text-sm text-white/65 md:flex">
+				<a href="#platform" class="transition hover:text-lime">Platform</a>
+				<a href="#insights" class="transition hover:text-lime">Insights</a>
+				<a href="#company" class="transition hover:text-lime">Company</a>
+			</div>
+			<div class="flex items-center gap-3">
+				<a href="#signin" class="hidden text-sm font-medium text-white/70 transition hover:text-white sm:block">Sign in</a>
+				<a href="#demo" class="group flex items-center gap-2 rounded-full bg-lime px-4 py-2.5 text-sm font-semibold text-ink transition hover:bg-white">
+					Book a demo <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<main id="top">
+		<section class="relative isolate overflow-hidden border-b border-white/10">
+			<div class="grid-lines absolute inset-0 -z-10 opacity-70"></div>
+			<div class="absolute -right-32 top-12 -z-10 h-80 w-80 rounded-full bg-aqua/15 blur-3xl"></div>
+			<div class="mx-auto grid max-w-7xl gap-14 px-5 pb-20 pt-18 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:px-8 lg:pb-28 lg:pt-28">
+				<div class="rise">
+					<div class="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[.2em] text-lime"><span class="h-px w-8 bg-lime"></span> Intelligence, in focus</div>
+					<h1 class="max-w-3xl font-display text-5xl font-medium leading-[.98] tracking-[-.06em] text-white sm:text-7xl lg:text-[6.4rem]">Make your data <span class="text-lime">speak clearly.</span></h1>
+					<p class="mt-8 max-w-xl text-base leading-7 text-white/60 sm:text-lg">Nexus turns scattered signals into a shared source of truth, so your team can move from questions to confident decisions in minutes.</p>
+					<div class="mt-10 flex flex-wrap items-center gap-4">
+						<a href="#demo" class="group flex items-center gap-3 rounded-full bg-lime px-6 py-3.5 text-sm font-bold text-ink transition hover:bg-white">Explore the platform <i data-lucide="arrow-right" class="h-4 w-4 transition group-hover:translate-x-1"></i></a>
+						<a href="#insights" class="flex items-center gap-2 px-2 py-3.5 text-sm font-semibold text-white/70 transition hover:text-lime"><i data-lucide="play-circle" class="h-5 w-5"></i> See how it works</a>
+					</div>
+				</div>
+				<div class="rise delay-2 relative">
+					<div class="rounded-2xl border border-white/15 bg-[#182027]/90 p-4 shadow-2xl shadow-black/30 backdrop-blur sm:p-5">
+						<div class="flex items-center justify-between border-b border-white/10 pb-4"><div><p class="text-xs text-white/45">Revenue performance</p><p class="mt-1 font-display text-2xl font-semibold">$842,190</p></div><span class="flex items-center gap-1 rounded-full bg-lime/15 px-2.5 py-1 text-xs font-semibold text-lime"><i data-lucide="trending-up" class="h-3.5 w-3.5"></i> 18.4%</span></div>
+						<div class="mt-7 flex h-44 items-end gap-2 sm:gap-3">
+							<div class="h-[36%] flex-1 rounded-t bg-aqua/35"></div><div class="h-[48%] flex-1 rounded-t bg-aqua/50"></div><div class="h-[43%] flex-1 rounded-t bg-aqua/50"></div><div class="h-[61%] flex-1 rounded-t bg-aqua/70"></div><div class="h-[56%] flex-1 rounded-t bg-aqua/70"></div><div class="h-[78%] flex-1 rounded-t bg-lime/80"></div><div class="h-[70%] flex-1 rounded-t bg-lime"></div><div class="h-[94%] flex-1 rounded-t bg-lime"></div>
+						</div>
+						<div class="mt-3 flex justify-between text-[10px] uppercase tracking-widest text-white/35"><span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span></div>
+					</div>
+					<div class="absolute -bottom-8 -left-7 hidden rounded-xl border border-white/15 bg-[#202b31] p-4 shadow-xl sm:block"><div class="flex items-center gap-3"><span class="grid h-9 w-9 place-items-center rounded-full bg-aqua/20 text-aqua"><i data-lucide="zap" class="h-4 w-4"></i></span><div><p class="text-[10px] uppercase tracking-widest text-white/40">Live insight</p><p class="mt-1 text-xs font-semibold">Conversion is up 24%</p></div></div></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="platform" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+			<div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-20"><div><p class="text-xs font-semibold uppercase tracking-[.2em] text-aqua">One connected view</p><h2 class="mt-4 max-w-sm font-display text-4xl leading-tight tracking-[-.04em] sm:text-5xl">Less dashboard noise. <span class="text-white/45">More signal.</span></h2></div><div class="grid gap-8 sm:grid-cols-2"><article class="border-t border-white/20 pt-5"><i data-lucide="layers-3" class="h-6 w-6 text-lime"></i><h3 class="mt-5 font-display text-xl font-semibold">Bring it together</h3><p class="mt-3 text-sm leading-6 text-white/55">Connect every source without building a maze of brittle spreadsheets and manual exports.</p></article><article class="border-t border-white/20 pt-5"><i data-lucide="scan-line" class="h-6 w-6 text-lime"></i><h3 class="mt-5 font-display text-xl font-semibold">See what matters</h3><p class="mt-3 text-sm leading-6 text-white/55">Surface the patterns hiding in your data with fast, flexible analysis built for real teams.</p></article></div></div>
+		</section>
+
+		<section id="insights" class="border-y border-white/10 bg-paper text-ink"><div class="mx-auto grid max-w-7xl gap-12 px-5 py-18 lg:grid-cols-[.8fr_1.2fr] lg:items-end lg:px-8 lg:py-24"><div><p class="text-xs font-bold uppercase tracking-[.2em] text-[#60741f]">Built for momentum</p><h2 class="mt-4 max-w-lg font-display text-4xl leading-tight tracking-[-.05em] sm:text-6xl">The right answer is already in there.</h2></div><div><p class="max-w-xl text-base leading-7 text-ink/65">From first click to final forecast, Nexus gives every person a clearer way to work with data. No specialist degree required.</p><a href="#demo" class="mt-7 inline-flex items-center gap-2 border-b border-ink pb-2 text-sm font-bold">Discover Nexus <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></div></div></section>
+
+		<section id="demo" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"><div class="flex flex-col justify-between gap-10 border-b border-white/15 pb-16 sm:flex-row sm:items-end"><div><p class="text-xs font-semibold uppercase tracking-[.2em] text-lime">Start seeing clearly</p><h2 class="mt-4 max-w-2xl font-display text-4xl tracking-[-.05em] sm:text-6xl">Your next decision deserves better data.</h2></div><a href="#top" class="group flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-lime text-ink transition hover:bg-white"><i data-lucide="arrow-up-right" class="h-6 w-6 transition group-hover:translate-x-1 group-hover:-translate-y-1"></i></a></div></section>
+	</main>
+	<footer id="company" class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between lg:px-8"><span class="font-display text-sm font-semibold text-white/80">nexus<span class="text-lime">.</span></span><span>Clarity for the curious. © 2024 Nexus Analytics.</span><div class="flex gap-5"><a href="#privacy" class="hover:text-white">Privacy</a><a href="#contact" class="hover:text-white">Contact</a></div></div></footer>
+	<script>lucide.createIcons();</script>
+</body>
+</html>
